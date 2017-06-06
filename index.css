@@ -19,15 +19,18 @@ h1{
     padding: 1rem;
 }
 
- #mainButton{
+#details{
+    color: black;
+    
+}
+
+#mainButton{
      background-color: #4CAF50; /* Green */
      border: none;
      color: white;
-     padding: 10px 165px;
+     padding: 1rem;
      text-align: center;
-     text-decoration: none;
-     border-radius: 2px;
-     float: right;
+     border-radius: 2px;    
      font-size: 16px; 
      font-family: "Trebuchet MS"
 }

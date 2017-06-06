@@ -2,7 +2,7 @@ const personForm = document.querySelector('#personForm')
  
 function renderListItem(name){
         const li = document.createElement('li')
-        li.innerHTML = `Name: ${name}`
+        li.innerHTML = `${name}`
         
         return li
     }
@@ -10,11 +10,8 @@ function renderListItem(name){
 function renderList(name){
         const list = document.createElement('ul')
         
-        //loop over ['name, 'favColor', 'age']
-        Object.keys(name).map(function(fieldName){
-            const li = renderListItem(name)
-            list.appendChild(li)
-        })
+       const li = renderListItem(name)
+       list.appendChild(li)
         
         return list 
     }
