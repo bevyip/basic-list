@@ -4,7 +4,7 @@
 Make a new project from scratch! 
 
 ### Baseline Goal
-*User can enter a thing(_.eg._ dinosaur movies) to be added to the list.
+*User can enter a thing(_e.g._ dinosaur movies) to be added to the list.
 *The thing will be added to the end of the list.
 
 ### Bonus Credit
