@@ -15,20 +15,20 @@ h1{
     background-color: maroon;
     text-align: center;
     border-radius: 4px;
+    font-family: "Helvetica";
     color: white;
     padding: 1rem;
 }
 
 #details{
     color: black;
-    
 }
 
 #mainButton{
      background-color: #4CAF50; /* Green */
      border: none;
      color: white;
-     padding: 1rem;
+     padding: 10px 220px;
      text-align: center;
      border-radius: 2px;    
      font-size: 16px; 
@@ -40,12 +40,14 @@ h1{
     font-family: "Trebuchet MS";
 }
 
-dl {
-  padding: 15px 10px;
-}
 
-dl > li {
-  list-style: none;
+#details li{
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    font: 300 20px "Trebuchet MS";
+    padding: 15px;
+    
 }
 
 dt, dd {
@@ -75,10 +77,6 @@ dl:nth-of-type(even) {
     clear: both;
     content: "";
     display: table;
-  }
-
-  mainButton{
-    background-color: #008CBA;
   }
 
 }
