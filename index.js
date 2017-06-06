@@ -9,7 +9,8 @@ function handleSubmit(e){
     var newItem = document.createElement("li")
     var textNode = document.createTextNode(name)
     newItem.appendChild(textNode);
-
     details.insertBefore(newItem, details.childNodes[0])
+    
 }
+
 personForm.addEventListener("submit",handleSubmit)
