@@ -9,22 +9,27 @@ function handleSubmit(e){
     var newItem = document.createElement("li")
     newItem.classList.add('notclicked')
     var textNode = document.createTextNode(name)
-    newItem.appendChild(textNode);
-    newItem.addEventListener("click", function(){
-        myFunction()
-    });
+    var button = document.createElement('button')
+    button.textContent = 'delete'
+    newItem.appendChild(textNode)
+    newItem.appendChild(button)
+    newItem.addEventListener("click", myFunction)
 
     function myFunction(){
         if (newItem.classList.contains('notclicked')){
-            document.getElementById('details').children[0].classList.add('clicked')
-            document.getElementById('details').children[0].classList.remove('notclicked')
+            this.classList.add('clicked')
+            this.classList.remove('notclicked')
         }else{
-            document.getElementById('details').children[0].classList.add('notclicked')
-            document.getElementById('details').children[0].classList.remove('clicked')
+            this.classList.add('notclicked')
+            this.classList.remove('clicked')
         }
     }
 
     details.insertBefore(newItem, details.childNodes[0])
+
+    button.addEventListener("click", function(){
+        details.removeChild(newItem)
+    })
     
 }
 

@@ -48,6 +48,13 @@ h1{
     padding: 15px;
 }
 
+#details button{
+    color: yellow;
+    font: 14px "Trebuchet MS";
+    padding: 20px 40px;
+    -ms-grid-row-align: end;    
+}
+
 .notclicked{
      background-color: black;
 }
