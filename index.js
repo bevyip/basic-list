@@ -1,20 +1,4 @@
 const personForm = document.querySelector('#personForm')
- 
-function renderListItem(name){
-        const li = document.createElement('li')
-        li.innerHTML = `${name}`
-        
-        return li
-    }
-
-function renderList(name){
-        const list = document.createElement('ul')
-        
-       const li = renderListItem(name)
-       list.appendChild(li)
-        
-        return list 
-    }
 
 function handleSubmit(e){
     e.preventDefault()
@@ -22,6 +6,10 @@ function handleSubmit(e){
     const name = f.name.value
     const details = document.querySelector('#details') 
     
-    details.appendChild(renderList(name))
+    var newItem = document.createElement("li")
+    var textNode = document.createTextNode(name)
+    newItem.appendChild(textNode);
+
+    details.insertBefore(newItem, details.childNodes[0])
 }
 personForm.addEventListener("submit",handleSubmit)
