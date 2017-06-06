@@ -43,13 +43,16 @@ h1{
 
 #details li{
     list-style-type: none;
-    background-color: black;
     color: white;
     font: 300 20px "Trebuchet MS";
     padding: 15px;
 }
 
-#details li:active {
+.notclicked{
+     background-color: black;
+}
+
+.clicked {
     background-color: turquoise;
 }
 
